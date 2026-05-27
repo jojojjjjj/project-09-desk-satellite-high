@@ -1,0 +1,102 @@
+# =============================================================================
+# Desk Satellite 项目依赖库 / Desk Satellite Project Dependencies
+# =============================================================================
+#
+# 这是 Desk Satellite (ESP32-C3 桌面气象卫星) 项目的 Arduino 库依赖列表。
+# This is the Arduino library dependency list for the Desk Satellite project.
+#
+# 安装方法 / Installation Instructions:
+# -----------------------------------------------------------------------------
+#
+# 【步骤 1】安装 ESP32 开发板支持包 / Step 1: Install ESP32 Board Package
+#
+#   在 Arduino IDE 中:
+#   In Arduino IDE:
+#     1. 打开 文件 > 首选项 / File > Preferences
+#     2. 在 "附加开发板管理器网址" 中添加:
+#        Add to "Additional Board Manager URLs":
+#        https://espressif.github.io/arduino-esp32/package_esp32_index.json
+#     3. 打开 工具 > 开发板 > 开发板管理器 / Tools > Board > Boards Manager
+#     4. 搜索 "esp32"，安装 "esp32 by Espressif Systems" (推荐 2.0.x+)
+#        Search "esp32", install "esp32 by Espressif Systems" (recommended 2.0.x+)
+#     5. 选择开发板: 工具 > 开发板 > ESP32 Arduino > ESP32C3 Dev Module
+#        Select board: Tools > Board > ESP32 Arduino > ESP32C3 Dev Module
+#
+# 【步骤 2】安装以下库 / Step 2: Install the Following Libraries
+#
+#   方法 A (推荐): 在 Arduino IDE 中通过库管理器安装:
+#   Method A (Recommended): Install via Arduino IDE Library Manager:
+#     1. 打开 工具 > 管理库 / Tools > Manage Libraries (Ctrl+Shift+I)
+#     2. 搜索下方列出的每个库名称并点击"安装"
+#        Search each library name listed below and click "Install"
+#
+#   方法 B: 使用 arduino-cli 命令行安装:
+#   Method B: Install using arduino-cli:
+#     arduino-cli lib install "Adafruit SHT31 Library"
+#     arduino-cli lib install "Adafruit GFX Library"
+#     arduino-cli lib install "Adafruit ST7735 and ST7789 Library"
+#
+# 【步骤 3】配置项目 / Step 3: Configure the Project
+#
+#   1. 复制 config.template.h 为 config.h
+#      Copy config.template.h to config.h
+#   2. 在 config.h 中填入你的 WiFi 名称和密码
+#      Fill in your WiFi SSID and password in config.h
+#   3. 根据需要调整时区和其他参数
+#      Adjust timezone and other parameters as needed
+#
+# =============================================================================
+
+# =============================================================================
+# 温湿度传感器库 / Temperature & Humidity Sensor Library
+# =============================================================================
+
+# SHT31-D 数字温湿度传感器驱动
+# SHT31-D digital temperature/humidity sensor driver
+# 用于通过 I2C 读取温度和湿度数据
+# Used to read temperature and humidity data via I2C
+Adafruit SHT31 Library
+
+# =============================================================================
+# TFT 显示屏库 / TFT Display Libraries
+# =============================================================================
+
+# Adafruit 核心图形库，提供绘图原语 (线、圆、文字等)
+# Adafruit core graphics library providing drawing primitives (lines, circles, text, etc.)
+Adafruit GFX Library
+
+# ST7735 TFT 显示屏驱动 (1.44" 128x128 或 0.96" 80x160)
+# ST7735 TFT display driver (1.44" 128x128 or 0.96" 80x160)
+# 通过 SPI 接口控制显示屏
+# Controls the display via SPI interface
+Adafruit ST7735 and ST7789 Library
+
+# =============================================================================
+# ESP32 内置库 (无需额外安装) / ESP32 Built-in Libraries (No Installation Needed)
+# =============================================================================
+
+# WiFi.h       - ESP32 WiFi 连接 / ESP32 WiFi connectivity
+# Wire.h       - I2C 通信 / I2C communication
+# SPI.h        - SPI 通信 / SPI communication
+# time.h       - 时间处理 / Time handling
+# esp_sleep.h  - 深度睡眠 / Deep sleep mode
+# esp_timer.h  - 硬件定时器 / Hardware timers
+
+# =============================================================================
+# 注意事项 / Notes
+# =============================================================================
+#
+# - 安装 Adafruit 库时，Arduino IDE 会自动安装其依赖项 (如 Adafruit BusIO)
+#   When installing Adafruit libraries, Arduino IDE will automatically install
+#   their dependencies (e.g., Adafruit BusIO)
+#
+# - 如果编译时出现 "SPI.h not found" 错误，请确认已正确选择 ESP32C3 开发板
+#   If you get "SPI.h not found" during compilation, confirm the ESP32C3 board
+#   is properly selected in Tools > Board
+#
+# - 推荐使用 Arduino IDE 2.x 或更高版本
+#   Arduino IDE 2.x or later is recommended
+#
+# - 上传时如果出现连接错误，按住 BOOT 按钮再点击上传
+#   If upload fails with connection error, hold the BOOT button while uploading
+#
