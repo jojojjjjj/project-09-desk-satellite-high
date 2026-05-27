@@ -145,7 +145,7 @@ Upon completing this project, you will own a device that can:
 
 1. 准备 ESP32-C3 开发板、ST7735 TFT 显示屏、SHT31-D 传感器等电子元件
 2. 准备铜线（1mm 和 0.7mm）、黄铜管（3mm）、竹杯垫等结构材料
-3. 按照 `hardware/wiring-guide.md` 接线（SPI 显示 + I2C 传感器 + 电源管理）
+3. 按照 `hardware/wiring-guide.md` 接线（SPI 显示: CS=21,DC=20,RST=10,MOSI=9,SCLK=8 + I2C 传感器: SDA=2,SCL=0 + 电源管理）
 4. 按照 `hardware/assembly-steps.md` 组装卫星外壳结构
 
 ### 软件准备 Software Setup

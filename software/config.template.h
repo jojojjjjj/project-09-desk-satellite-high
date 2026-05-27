@@ -69,32 +69,34 @@
 // Note: ESP32-C3 GPIO numbers may differ from board silkscreen labels
 
 // SPI 数据引脚 (MOSI) / SPI data pin (Master Out Slave In)
-#define TFT_MOSI    7
+#define TFT_MOSI    9
 
 // SPI 时钟引脚 (SCK) / SPI clock pin (Serial Clock)
-#define TFT_SCK     6
+#define TFT_SCK     8
 
 // TFT 片选引脚 (CS) / TFT chip select pin (Chip Select)
-#define TFT_CS      10
+#define TFT_CS      21
 
 // TFT 数据/命令引脚 (DC) / TFT data/command pin (Data/Command)
-#define TFT_DC      2
+#define TFT_DC      20
 
 // TFT 复位引脚 (RST) / TFT reset pin
-#define TFT_RST     3
+#define TFT_RST     10
 
 // TFT 背光引脚 (BL) / TFT backlight pin
-#define TFT_BL      8
+// 如果未使用背光控制，可以保持未连接
+// If not using backlight control, leave disconnected
+#define TFT_BL      -1
 
 // =============================================================================
 // I2C 引脚定义 (SHT31-D 温湿度传感器) / I2C Pin Definitions (SHT31-D Sensor)
 // =============================================================================
 
 // I2C 数据引脚 (SDA) / I2C data pin (Serial Data)
-#define I2C_SDA     4
+#define I2C_SDA     2
 
 // I2C 时钟引脚 (SCL) / I2C clock pin (Serial Clock)
-#define I2C_SCL     5
+#define I2C_SCL     0
 
 // =============================================================================
 // 触摸开关和 LED / Touch Switch and LED
@@ -102,12 +104,13 @@
 
 // 触摸开关引脚 / Touch switch pin
 // 用于控制屏幕开关和进入深度睡眠 / Controls screen on/off and deep sleep
-#define TOUCH_PIN   9
+#define TOUCH_PIN   1
 
 // LED 指示灯引脚 / LED indicator pin
 // 显示 WiFi 连接状态和数据更新状态
 // Shows WiFi connection status and data update status
-#define LED_PIN     0
+// 如果未使用 LED，设为 -1 / Set to -1 if not using LED
+#define LED_PIN     -1
 
 // 触摸开关去抖时间 (毫秒) / Touch switch debounce time (milliseconds)
 #define TOUCH_DEBOUNCE_MS 300
