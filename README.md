@@ -193,8 +193,7 @@ project-09-desk-satellite-high/
 │   ├── week-2-checkin.md                  # 第二周进度报告
 │   ├── final-presentation.md              # 最终展示要求
 │   └── rubric.md                          # 详细评分表
-└── resources/
-    └── search-results.md                  # 资源搜索结果
+└── resources/                             # 开源资源链接（外部链接，见各文件内引用）
 ```
 
 ---

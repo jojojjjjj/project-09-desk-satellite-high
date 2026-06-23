@@ -40,6 +40,8 @@
 
 ## 阶段二：铜线卫星框架制作 | Phase 2: Copper Wire Satellite Frame
 
+> ⏱ 时间紧或零焊接经验？可以只做「主体框架 + 两片太阳能翼」的最小造型，跳过复杂细节装饰先把整机跑通；建议两人一组分工（一人弯线焊接、一人接线调试），别一个人死磕铜线。｜ Short on time or new to soldering? Just build the minimal "main frame + two solar wings" shape first and skip fine decoration; work in pairs — one bends/solders, one wires — don't get stuck alone on the copper.
+
 ### 安全须知 | Safety Warnings
 
 - **焊接时必须佩戴护目镜** | Always wear safety goggles when soldering

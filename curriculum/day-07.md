@@ -37,12 +37,14 @@ ESP32-C3          TTP223 触摸模块
 ─────────         ───────────────
 3V3         ────▶ VCC
 GND         ────▶ GND
-GPIO2       ────▶ SIG (信号输出)
+GPIO1       ────▶ SIG (信号输出)
 ```
 
 ```cpp
 // 触摸开关基本读取
-#define TOUCH_PIN 2
+// 注意：实际引脚以 config.h 中的 TOUCH_PIN 为准（默认 GPIO1）
+// Note: the actual pin is TOUCH_PIN in config.h (default GPIO1)
+#define TOUCH_PIN 1   // 仅作示例，实际用 config.h 中的定义
 
 bool touchPressed = false;
 bool lastTouchState = false;

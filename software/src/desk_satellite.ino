@@ -7,10 +7,11 @@
 // Features: Temperature/Humidity display + Network clock + Touch control
 //
 // 硬件连接 / Hardware Connections:
-//   - ST7735 TFT 显示屏 (SPI): MOSI=7, SCK=6, CS=10, DC=2, RST=3, BL=8
-//   - SHT31-D 温湿度传感器 (I2C): SDA=4, SCL=5
-//   - 触摸开关: GPIO 9
-//   - LED 指示灯: GPIO 0
+//   引脚映射见 config.h / See config.h for pin mapping
+//   (接线依据请以 hardware/wiring-guide.md 为准 / Refer to hardware/wiring-guide.md for wiring)
+//   - ST7735 TFT 显示屏 (SPI)
+//   - SHT31-D 温湿度传感器 (I2C)
+//   - 触摸开关 / LED 指示灯
 //   - 3.7V LiPo 电池 + Type-C 充电 + 太阳能输入
 //
 // 作者 / Author: Based on project by Huy Vector
