@@ -1,5 +1,7 @@
 # 桌面卫星气象站 "Desk Satellite" | Desktop Satellite Weather Station
 
+<!-- 注：价格信息已注释隐藏（查价不准确，仅作参考不严谨）/ Note: price info commented out (inaccurate, not rigorous as reference) -->
+
 > 面向高中生的暑期 IoT 进阶实践项目 | An Advanced Summer IoT Practicum Project for High School Students
 
 ---
@@ -84,42 +86,42 @@ Upon completing this project, you will own a device that can:
 
 | 部件 Component | 规格 Specification | 数量 | 参考价格 Price | 购买参考 Source |
 |---------------|-------------------|------|--------------|----------------|
-| ESP32-C3 开发板 | ESP32-C3, 4MB Flash, WiFi+BLE | 1 | 15-25 元 | 淘宝搜索"ESP32-C3" |
-| ST7735 TFT 显示屏 | 0.96寸 80x160 SPI 彩色 | 1 | 10-15 元 | 淘宝搜索"0.96 TFT ST7735" |
-| SHT31-D 温湿度传感器 | I2C, ±0.3°C, ±2%RH | 1 | 8-15 元 | 淘宝搜索"SHT31 温湿度" |
-| 3.7V 锂电池 | 103040 或类似, 带保护板 | 1 | 10-15 元 | 淘宝搜索"3.7V 锂电池" |
-| Type-C 充电模块 | 4.2V 锂电充电, TP4055/TP5100 | 1 | 3-5 元 | 淘宝搜索"Type-C 锂电充电模块" |
-| 太阳能充电控制器 | 5V 输入, 锂电充电管理 | 1 | 5-10 元 | 淘宝搜索"太阳能充电控制器" |
-| 迷你太阳能板 | 5V 0.5W-1W | 1-2 | 5-10 元 | 淘宝搜索"迷你太阳能板 5V" |
-| 电池电量指示模块 | 4LED 电量指示 | 1 | 3-5 元 | 淘宝搜索"电池电量指示模块" |
-| 触摸开关 | TTP223 触摸传感器模块 | 1 | 2-3 元 | 淘宝搜索"TTP223 触摸开关" |
-| 拨动开关 | 微型滑动开关 | 1 | 1 元 | 淘宝搜索"微型拨动开关" |
-| Type-C 母座 | USB Type-C 母座接口 | 1 | 1-2 元 | 淘宝搜索"Type-C 母座" |
-| LED 指示灯 | 3mm 或 5mm, 多色 | 若干 | 1-2 元 | 淘宝搜索"LED 3mm" |
+| ESP32-C3 开发板 | ESP32-C3, 4MB Flash, WiFi+BLE | 1 | <!-- 15-25 元 --> | 淘宝搜索"ESP32-C3" |
+| ST7735 TFT 显示屏 | 0.96寸 80x160 SPI 彩色 | 1 | <!-- 10-15 元 --> | 淘宝搜索"0.96 TFT ST7735" |
+| SHT31-D 温湿度传感器 | I2C, ±0.3°C, ±2%RH | 1 | <!-- 8-15 元 --> | 淘宝搜索"SHT31 温湿度" |
+| 3.7V 锂电池 | 103040 或类似, 带保护板 | 1 | <!-- 10-15 元 --> | 淘宝搜索"3.7V 锂电池" |
+| Type-C 充电模块 | 4.2V 锂电充电, TP4055/TP5100 | 1 | <!-- 3-5 元 --> | 淘宝搜索"Type-C 锂电充电模块" |
+| 太阳能充电控制器 | 5V 输入, 锂电充电管理 | 1 | <!-- 5-10 元 --> | 淘宝搜索"太阳能充电控制器" |
+| 迷你太阳能板 | 5V 0.5W-1W | 1-2 | <!-- 5-10 元 --> | 淘宝搜索"迷你太阳能板 5V" |
+| 电池电量指示模块 | 4LED 电量指示 | 1 | <!-- 3-5 元 --> | 淘宝搜索"电池电量指示模块" |
+| 触摸开关 | TTP223 触摸传感器模块 | 1 | <!-- 2-3 元 --> | 淘宝搜索"TTP223 触摸开关" |
+| 拨动开关 | 微型滑动开关 | 1 | <!-- 1 元 --> | 淘宝搜索"微型拨动开关" |
+| Type-C 母座 | USB Type-C 母座接口 | 1 | <!-- 1-2 元 --> | 淘宝搜索"Type-C 母座" |
+| LED 指示灯 | 3mm 或 5mm, 多色 | 若干 | <!-- 1-2 元 --> | 淘宝搜索"LED 3mm" |
 
 ### 结构材料 Structural Materials
 
 | 部件 Component | 规格 Specification | 数量 | 参考价格 Price | 购买参考 Source |
 |---------------|-------------------|------|--------------|----------------|
-| 铜线 Copper Wire | 1mm 直径 | 若干 | 5-10 元 | 淘宝/五金店 |
-| 铜线 Copper Wire | 0.7mm/0.8mm 直径 | 若干 | 5-10 元 | 淘宝/五金店 |
-| 黄铜管 Brass Tube | 3mm 外径 | 若干 | 5-10 元 | 淘宝搜索"黄铜管 3mm" |
-| 竹杯垫/底座 Bamboo Coaster Base | 6cm 直径 | 1 | 3-5 元 | 淘宝搜索"竹杯垫" |
+| 铜线 Copper Wire | 1mm 直径 | 若干 | <!-- 5-10 元 --> | 淘宝/五金店 |
+| 铜线 Copper Wire | 0.7mm/0.8mm 直径 | 若干 | <!-- 5-10 元 --> | 淘宝/五金店 |
+| 黄铜管 Brass Tube | 3mm 外径 | 若干 | <!-- 5-10 元 --> | 淘宝搜索"黄铜管 3mm" |
+| 竹杯垫/底座 Bamboo Coaster Base | 6cm 直径 | 1 | <!-- 3-5 元 --> | 淘宝搜索"竹杯垫" |
 
 ### 工具 Tools
 
 | 工具 Tool | 用途 Purpose | 参考价格 Price |
 |-----------|-------------|--------------|
-| 电烙铁焊台 Soldering Iron Station | 焊接元件 | 50-100 元 |
-| 焊锡丝 Solder Wire | 焊接耗材 | 10-20 元 |
-| 助焊剂 Solder Flux | 提高焊接质量 | 5-10 元 |
-| 烙铁架夹具 Iron Stand Clamp | 固定烙铁/元件 | 15-30 元 |
-| 吸锡器 Desoldering Pump | 拆焊 | 10-15 元 |
-| 迷你钳子/剪线钳 Mini Pliers Cutter | 剪线/弯线 | 10-20 元 |
-| 切割垫 Cutting Pad | 保护桌面 | 10-15 元 |
-| 圆规刀 Circle Cutter | 切割圆形底座 | 10-15 元 |
+| 电烙铁焊台 Soldering Iron Station | 焊接元件 | <!-- 50-100 元 --> |
+| 焊锡丝 Solder Wire | 焊接耗材 | <!-- 10-20 元 --> |
+| 助焊剂 Solder Flux | 提高焊接质量 | <!-- 5-10 元 --> |
+| 烙铁架夹具 Iron Stand Clamp | 固定烙铁/元件 | <!-- 15-30 元 --> |
+| 吸锡器 Desoldering Pump | 拆焊 | <!-- 10-15 元 --> |
+| 迷你钳子/剪线钳 Mini Pliers Cutter | 剪线/弯线 | <!-- 10-20 元 --> |
+| 切割垫 Cutting Pad | 保护桌面 | <!-- 10-15 元 --> |
+| 圆规刀 Circle Cutter | 切割圆形底座 | <!-- 10-15 元 --> |
 
-| **合计 Total** | | | **约 150-250 元（不含工具）** | **远低于 500 元预算** |
+<!-- | **合计 Total** | | | **约 150-250 元（不含工具）** | **远低于 500 元预算** | -->
 
 > 注：本项目难度较高，涉及较多焊接和结构组装工作。建议两人一组合作完成，一人负责电路焊接，一人负责结构组装。
 > Note: This is a higher-difficulty project involving significant soldering and structural assembly. Teamwork in pairs is recommended: one for circuit soldering, one for structural assembly.
@@ -302,7 +304,7 @@ project-09-desk-satellite-high/
 | WiFi 配网 Provisioning | wifi_link_tool | 代码硬编码 SSID |
 | 通信协议 Protocol | I2C (OLED) | SPI (TFT) + I2C (SHT31) |
 | 难度 Difficulty | 入门 Easy | 进阶 High |
-| 估计成本 Cost | ~45 元 | ~150-250 元 |
+| 估计成本 Cost | <!-- ~45 元 --> | <!-- ~150-250 元 --> |
 
 ---
 
@@ -334,9 +336,9 @@ A: 可以，但需要修改代码中的驱动库。常见替代方案：(1) SSD1
 > Yes, but the display driver code needs modification. Alternatives: (1) SSD1306 OLED (0.96" I2C) -- easiest, monochrome only; (2) ST7789 TFT (1.3"/1.54") -- same family, larger. Adafruit's unified GFX interface makes switching relatively easy.
 
 **Q: SHT31-D 和 DHT11 有什么区别？为什么选 SHT31-D？**
-A: SHT31-D 精度远高于 DHT11（温度 ±0.3°C vs ±2°C，湿度 ±2% vs ±5%），且使用 I2C 总线（数字输出），不受信号线长度影响。价格虽然贵几元，但在桌面设备的精确度要求下非常值得。如果预算紧张，可以降级使用 DHT22（±0.5°C）。
+A: SHT31-D 精度远高于 DHT11（温度 ±0.3°C vs ±2°C，湿度 ±2% vs ±5%），且使用 I2C 总线（数字输出），不受信号线长度影响。价格虽然<!-- 贵几元 -->稍高，但在桌面设备的精确度要求下非常值得。如果预算紧张，可以降级使用 DHT22（±0.5°C）。
 
-> SHT31-D is far more accurate than DHT11 (±0.3°C vs ±2°C temp, ±2% vs ±5% humidity), uses I2C (digital), and isn't affected by wire length. A few CNY more but worth it for a desk device. For budget, DHT22 (±0.5°C) is a good middle ground.
+> SHT31-D is far more accurate than DHT11 (±0.3°C vs ±2°C temp, ±2% vs ±5% humidity), uses I2C (digital), and isn't affected by wire length. <!-- A few CNY more --> Slightly more expensive but worth it for a desk device. For budget, DHT22 (±0.5°C) is a good middle ground.
 
 ---
 
