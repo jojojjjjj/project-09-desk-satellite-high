@@ -194,9 +194,46 @@ project-09-desk-satellite-high/
 │   ├── week-1-checkin.md                  # 第一周进度报告
 │   ├── week-2-checkin.md                  # 第二周进度报告
 │   ├── final-presentation.md              # 最终展示要求
-│   └── rubric.md                          # 详细评分表
+│   ├── rubric.md                          # 详细评分表
+│   └── WorkSheet/                         # 🔒 私有子模块 | private submodule（ESE5190 原始工作表，见下文 / see below）
 └── resources/                             # 开源资源链接（外部链接，见各文件内引用）
 ```
+
+---
+
+## 作业工作表（私有子模块）| Worksheet (Private Submodule)
+
+本项目的原始作业工作表（改编自 UPenn ESE5190 课程材料）存放在一个**独立的私有 Git 仓库**中，并以子模块形式挂载在 `assignments/WorkSheet/`。该仓库为**私有**，仅授权用户可访问；未授权用户无法拉取。
+
+> The raw assignment worksheets (adapted from UPenn ESE5190 course materials) live in a **separate private Git repository**, linked as a submodule at `assignments/WorkSheet/`. The repository is **private** — only authorized users can access it; unauthorized users cannot pull it.
+
+**仓库地址 | Repository URL**：`https://github.com/jojojjjjj/project-09-worksheet.git`（🔒 私有 | private）
+
+### 如何拉取 | How to Pull
+
+**方式 A | Method A — 直接克隆（推荐）| Clone directly (recommended)**
+
+```bash
+git clone https://github.com/jojojjjjj/project-09-worksheet.git
+```
+
+未授权会报 `could not read Username` 或 `403 Forbidden`。
+> Without permission you'll get `could not read Username` or `403 Forbidden`.
+
+**方式 B | Method B — 通过父仓库子模块 | Via the parent repo's submodule**
+
+克隆本仓库后，初始化该子模块：
+> After cloning this repo, initialize the submodule:
+
+```bash
+git submodule update --init assignments/WorkSheet
+```
+
+> ⚠️ 该子模块为私有，未授权用户执行此命令会失败（这是**预期行为**，用于访问控制）。授权用户请先配置好 GitHub 凭据（如 `gh auth login`、SSH key 或 git credential helper）。
+> The submodule is private, so this command fails for unauthorized users — this is **intentional** access control. Authorized users must first configure GitHub credentials (e.g., `gh auth login`, an SSH key, or a git credential helper).
+
+> 📌 子模块内容更新后，授权用户可在此目录执行 `git pull` 拉取最新工作表；父仓库通过 `git submodule update --remote --merge assignments/WorkSheet` 跟踪子模块上游。
+> When the submodule content is updated, authorized users can `git pull` inside that directory for the latest worksheets; the parent repo tracks the upstream via `git submodule update --remote --merge assignments/WorkSheet`.
 
 ---
 

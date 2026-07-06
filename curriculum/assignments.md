@@ -3,6 +3,9 @@
 > 本文档基于 UPenn ESE5160 课程设计思路，遵循 `ASSIGNMENT_DESIGN_STANDARD.md` 标准，
 > 为桌面迷你卫星气象站（High 难度）项目设计完整的作业体系。
 
+> 📌 **原始工作表 | Source Worksheets**：本项目作业改编所参考的 UPenn ESE5190 原始工作表存放在**私有子模块** `assignments/WorkSheet/`（仓库 `https://github.com/jojojjjjj/project-09-worksheet.git`，🔒 私有，仅授权用户可访问）。拉取方式见 `README.md` 的「作业工作表（私有子模块）」一节。
+> The original UPenn ESE5190 worksheets referenced by these assignments live in a **private submodule** at `assignments/WorkSheet/` (repo `https://github.com/jojojjjjj/project-09-worksheet.git`, 🔒 private, authorized access only). See the "Worksheet (Private Submodule)" section in `README.md` for pull instructions.
+
 ---
 
 ## 作业总览 | Assignment Summary

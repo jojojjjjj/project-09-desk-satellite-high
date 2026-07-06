@@ -1,0 +1,7 @@
+# ── AI tool cache ───────────────────────────────────────────────────────
+.ai/
+
+# Note: assignments/WorkSheet/ is a PRIVATE git submodule
+# (https://github.com/jojojjjjj/project-09-worksheet). Its own .gitignore
+# handles the .docx→.md extraction intermediates (_media_orig/, _img_check/,
+# *_extracted.md, *_tmp.*); this parent .gitignore does not apply inside it.
