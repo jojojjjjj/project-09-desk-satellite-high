@@ -1,6 +1,9 @@
 # ── AI tool cache ───────────────────────────────────────────────────────
 .ai/
 
+# ── Editor backup files (Excel auto-backup, etc.) ──────────────────────
+*.bak
+
 # Note: assignments/WorkSheet/ is a PRIVATE git submodule
 # (https://github.com/jojojjjjj/project-09-worksheet). Its own .gitignore
 # handles the .docx→.md extraction intermediates (_media_orig/, _img_check/,
