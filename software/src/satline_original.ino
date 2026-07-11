@@ -1,3 +1,25 @@
+// =============================================================================
+// ⚠️ 原作者代码（原样保留，未修改）/ ORIGINAL AUTHOR CODE (VERBATIM, UNMODIFIED)
+// =============================================================================
+//
+// 作者 / Author:  Huy Vector  (https://www.youtube.com/@huyvector)
+// 来源 / Source:  原作者提供的 Google Drive 链接（见 README.md「开源声明」）
+//                Author's Google Drive link (see README.md "Open Source Credits")
+// 许可 / License: 原作者保留权利；课程材料整体以 CC BY-NC-SA 4.0 发布。
+//                Original code rights retained by the author; course materials
+//                released under CC BY-NC-SA 4.0.
+//
+// 说明 / Note:
+//   本文件为原作者 Huy Vector 的原始 .ino，仅作参考留存，代码部分未做任何改动。
+//   实际烧录与教学使用的是改编版 desk_satellite.ino（引脚抽离至 config.h、
+//   双语注释、DEBUG 开关、错误处理、屏幕自动关屏等教学化重构）。
+//   This is Huy Vector's original .ino, kept verbatim for reference; the code
+//   below is unmodified. The adapted desk_satellite.ino is what gets flashed
+//   (pins moved to config.h, bilingual comments, DEBUG flag, error handling,
+//   screen auto-off, and other teaching-focused refactors).
+//
+// =============================================================================
+
 #include <WiFi.h>
 #include <Wire.h>
 #include "Adafruit_SHT31.h"
