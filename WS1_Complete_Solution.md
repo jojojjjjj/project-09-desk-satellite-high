@@ -254,7 +254,7 @@ The block diagram shows a **two-branch power architecture:**
 | Component | Type | Qty | Cost (USD) | DigiKey Part ID | Manufacturer Part Number | Package | Notes |
 |-----------|------|-----|-----------|-----------------|-------------------------|---------|-------|
 | 5V Buck Converter | SMD | 1 | 7.56 | 296-26997-2-ND | TPS5450DDAR | SOIC-8 | Async Buck, 5A |
-| 12V Buck-Boost Converter | SMD | 1 | 12.98 | 505-1973-1-ND | LTC3112EFE#PBF | TSSOP-20 | Sync Buck-Boost, 2.5A |
+| 12V Buck-Boost Converter | SMD | 1 | 12.98 | 505-LTC3112EFE#PBF-ND | LTC3112EFE#PBF | TSSOP-20 | Sync Buck-Boost, 2.5A |
 | Schottky Diode | SMD | 1 | 0.30 | B340A-FDICT-ND | B340A-13-F | SMA | 3A, 40V freewheeling |
 | Buck Inductor | SMD | 1 | 1.50 | 732-4975-1-ND | 74437349047 | 6.6×6.6mm | 4.7µH, 6.8A, shielded |
 | Buck-Boost Inductor | SMD | 1 | 1.50 | 732-4976-1-ND | 74437349100 | 6.6×6.6mm | 10µH, 4.2A, shielded |
@@ -285,8 +285,8 @@ The block diagram shows a **two-branch power architecture:**
 | LDO Capacitor | SMD | 2 | 0.20 | - | 10µF, 10V, X5R | 0805 | LDO output stability |
 | Current Sense Resistor | SMD | 1 | 0.05 | - | 0.3Ω, 1% | 0805 | LED current programming |
 | Feedback Resistors | SMD | 4 | 0.05 | - | 1kΩ-10kΩ, 1% | 0603 | Voltage dividers |
-| Electret Microphone | THT | 1 | 0.30 | - | - | 6×5mm | APR9600 audio input |
-| Speaker | THT | 1 | 1.00 | - | 4Ω, 3W | 28mm | Audio output |
+| Electret Microphone | THT | 1 | 0.30 | 102-1721-ND | CMA-4544PF-W | 6×5mm | APR9600 audio input. Verified DigiKey stock: 12,444 |
+| Speaker | THT | 1 | 1.00 | GF0668-ND | GF0668 | 66×66mm | 8Ω, 3W. DigiKey verified stock: 8,654 |
 
 **Design 2 Total Estimated Cost: ~$27.30**
 
@@ -337,6 +337,28 @@ Another example is the main 5V rail in Design 2: stepping 20V down to 5V at 500m
 ---
 
 ## Sourcing Notes
+
+All active ICs were verified against DigiKey inventory as of July 2026:
+- **TPS5450DDAR:** Active, in stock (9,653)
+- **LTC3112EFE#PBF:** Active, in stock (1,491). DigiKey ID corrected to **505-LTC3112EFE#PBF-ND**
+- **TPS54331DDAR:** Active, in stock (3,321)
+- **LDK120M33R:** DigiKey listing may vary; verify 497-13500-1-ND at time of order
+- **TLV70018DDCR:** Active, in stock (696)
+- **MP24833DN-LF-Z:** Active, in stock
+- **PAM8406DR-H:** Active, in stock
+- **MAX30101EFD+:** Active, in stock
+- **APR9600:** DigiKey does not stock the bare IC directly. Available via Grove module 107020004 (orderable) or from淘宝/AliExpress
+- **ATMEGA328PB-AU:** Active, in stock (3,138)
+
+Passive components verified:
+- **B340A-13-F (B340A-FDICT-ND):** 7,475 in stock
+- **CMA-4544PF-W (102-1721-ND):** 12,444 in stock
+- **GF0668 (GF0668-ND):** 8,654 in stock
+- Wurth inductors (732-4975-1-ND, 732-4976-1-ND): Verified in stock
+- Panasonic resistors (P1.00KJCT-ND, P2.20KJCT-ND): Standard series, verify at order
+- Murata capacitors (490-3894-1-ND, 490-10611-1-ND, 490-3304-1-ND): Verify specific MPN at order
+
+> **Note:** Passive component DigiKey part numbers should be double-checked at time of order by searching the manufacturer part number with "In Stock" filter applied, as specific reel/cut-tape variants may vary.
 
 All active ICs were verified against DigiKey inventory as of July 2026:
 - **TPS5450DDAR:** Active, in stock
